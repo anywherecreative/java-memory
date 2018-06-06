@@ -5,6 +5,9 @@
  * @author Jeff Manning <info@jeffmanning.ca>
  * @version 1.0.0
  */
+
+import java.util.Iterator;
+
 public class Memory
 {
     public static void main(String args[]) {
@@ -12,10 +15,11 @@ public class Memory
     }
     
     public Memory() {
-        Card first = new Card("A",Card.SPADES);
-        Card second = new Card("A",Card.SPADES);
-        
-        System.out.println(first.isCard(new Card("K",Card.HEARTS)));
+        Deck deck = new Deck();
+        while(!deck.isEmpty()) {
+            Card currentCard = deck.getNextCard();
+            System.out.println(currentCard.getValue() + currentCard.getSuite());
+        }
     }
     
 }
