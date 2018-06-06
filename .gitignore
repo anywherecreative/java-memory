@@ -1,4 +1,6 @@
-package.bluej
-README.txt
-*.ctxt
-*.class
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/

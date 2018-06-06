@@ -55,4 +55,16 @@ public class Card
             return false;
         }
     }
+    
+    public void flipFaceUp() {
+        this.flipped = true;
+    }
+    
+    public void flipFaceDown() {
+        this.flipped = false;
+    }
+    
+    public void flip() {
+        this.flipped = !this.flipped;
+    }
 }
